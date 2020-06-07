@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>I-Techub</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style media="screen">
+.box{
+	border-collapse: collapse;
+	width: 520px;
+	height: 418px;
+	margin: 0 auto;
+	background-color: #404040;
+	color: #ddd;
+	padding: 16px;
+	border-radius: 40px;
+	box-shadow: 5px 5px 8px #404040;
+}
+.box tr td{
+	color: #ddd;
+	font-weight: bold;
+	font-size: 18px;
+	padding:16px;
+}
+.return{
+	text-decoration: none;
+	outline: none;
+	background-color: #ddd;
+	color:#292929;
+	padding: 10px 20px;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	transform: scale(1.1);
+	position: relative;
+	left:76%;
+}
+.return:hover{
+	text-decoration: none;
+	outline: none;
+	background: transparent;
+	color:#ddd;
+	transform: scale(1.1);
+	font-size: 18px;
+	transition: 0.3s;
+	font-weight: bolder;
+}
+</style>
+</head>
+<body>
+
+	<div class='container' style="margin-top:10%;">
+		<div class='row'>
+			<div class='col-sm-12' >
+				<div class="box">
+					<h1 align="center">Your Feedback have been saved!</h1>
+					<table>
+						<tr>
+							<td><i class="fa fa-user-circle-o" style="font-size:22px; color:#eee;"></i> Name:</td>
+							<td><p><span id="name"></span></p></td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-envelope" style="font-size:21px; color:#eee;"></i> Email:</td>
+							<td><span id="email"></span></td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-phone" style="font-size:24px; color:#eee;"></i> Phone Number:</td>
+							<td><span id="phoneNo" ></span></td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-comments-o" style="font-size:24px; color:#eee;"></i> Your Feedback:</td>
+							<td><span id="comments"></span></td>
+						</tr>
+					</table>
+					<a class="return" href="../Home page/Homepage.html">Return!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var formData = location.search;
+		formData = formData.substring(1, formData.length);
+		while (formData.indexOf("+") != -1) {
+			formData = formData.replace("+", " ");
+		}
+		formData = unescape(formData);
+		var formArray = formData.split("&");
+		var para = new Array();
+
+		</script>
+		<script>
+		// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+		for (var i=0; i < formArray.length; ++i) {
+
+			para=formArray[i].split("=");
+
+			switch (para[0]) {
+				case "name":
+							document.getElementById("name").innerHTML=para[1];
+							break;
+				case "email":
+							document.getElementById("email").innerHTML=para[1];
+							break;
+				case "phoneNo":
+							document.getElementById("phoneNo").innerHTML=para[1];
+							break;
+				case "comments":
+							document.getElementById("comments").innerHTML=para[1];
+							break;
+				}
+
+		}
+	</script>
+
+
+</body>
+</html>

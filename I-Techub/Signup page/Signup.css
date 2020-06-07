@@ -1,0 +1,130 @@
+.Signup{
+  background-image: url("../Images/Signup4.jpg");
+  min-height: 800px;
+  background-size:cover;
+  background-position: center;
+  position:relative;
+}
+
+
+/*Sign up and login form*/
+.formControl{
+  position: absolute;
+  top:22%;
+  left:63%;
+}
+
+.form-box{
+  font-family: sans-serif;
+  width: 350px;
+  height: 450px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  overflow: hidden;
+  color: #ddd;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+
+form .Submit-btn{
+  color:#ddd;
+  font-size: 20px;
+  font-weight: bold;
+}
+form .Submit-btn:hover{
+  color:#ddd;
+  font-size: 20px;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: 0.3s;
+  background: linear-gradient(to right, #ff105f,tomato);
+}
+
+
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px rgba(189, 189, 189, 0.2);
+  border-radius: 30px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top:0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #de0d52,#ff105f);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.input-group{
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  color: #ddd;
+  margin-bottom: 5.5%;
+}
+form p input:focus{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, tomato,#ff105f);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  line-height: 20px;
+  position: absolute;
+  margin-top: 5%;
+}
+.check-box{
+  margin: 30px 10px 30px 0;
+}
+
+#Login{
+  left: 36px;
+}
+#SignUp{
+  left: 360px;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+  .formControl{
+    position: absolute;
+    top:22%;
+    left:12%;
+  }

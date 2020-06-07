@@ -1,0 +1,98 @@
+* {box-sizing: border-box;}
+
+body{
+  margin: 0;
+  font-family: "sans-serif", arial;
+}
+
+.Navpic{
+  background-image: url("Images/Apple Navbar.jpg");
+  background-attachment: fixed;
+  min-height: 700px;
+  background-size:cover;
+  background-position: center;
+  position:relative;
+}
+
+.Navbar{
+  padding: 5px;
+  overflow: hidden;
+}
+.Navbar a {
+  padding: 15px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.Navbar a:hover{
+  background-color: rgba(247, 246, 242,0.3);
+  color: #f2f2f2;
+  transform: scale(1.05);
+  border-radius: 6px;
+  transition: 0.4s;
+
+}
+.topnav .icon {
+  display: none;
+}
+
+/*dropdownlist*/
+
+.dropdownlist{
+  float: right;
+  overflow: hidden;
+}
+.dropdownlist .dropbtn{
+  font-size: 18px;
+  font-weight: bold;
+  border:none;
+  color: #f6f7f5;
+  padding: 15px;
+  background-color:inherit;
+  float: right;
+  outline: none;
+}
+.dropdown-content{
+  display: none;
+  position: relative;
+  color:#f6f7f5;
+  min-width: 200px;
+  z-index: 1;
+}
+.dropdown-content a{
+  font-size: 18px;
+  padding:15px;
+  float: none;
+  color: #f6f7f5;
+  text-decoration: none;
+  display: inline-block;
+  text-align: Center;
+  min-width: inherit;
+  border-radius: 6px;
+}
+
+.dropbtn:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(41, 41, 41,0.8);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.dropdownlist:hover .dropdown-content{
+  display: inline-block;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I-tech: Shopping-Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../Navbar.css">
+    <link rel="stylesheet" href="../Footer.css">
+    <link rel="stylesheet" href="Cart.css">
+    <style media="screen">
+      .dropdown-content a{
+        font-size: 15px;
+        padding:15px;
+        float: none;
+        color: #f6f7f5;
+        text-decoration: none;
+        display: inline-block;
+        text-align: Center;
+        min-width: inherit;
+        border-radius: 6px;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky {
+        padding-top: 2px;
+        z-index: 5;
+        background-color: #292929;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----------------------Header----------------------->
+    <div class="Cartheader" name="top">
+      <div class="Navbar" id="Topnavbar">
+        <a style=" font-size:30px; padding:11px;" href="../Home page/Homepage.html">I <span style="color:#FE4066; font-size:30px;"> - </span> Techub</a>
+        <span style="float:right;"><a href="../FAQ page/FAQ.html"><i class="fa fa-question-circle" style="font-size:24px"></i> FAQ</a></span>
+        <span style="float:right;"><a href="../Signup page/Signup.html"><i class="	fa fa-user-circle"></i> Log In &amp; Sign Up</a></span>
+        <a  href="#" style="float:right;"> <i class="fa fa-cart-plus"></i> Cart <span class="Cart" style="font-size:14px;">0</span></a>
+        <div class="dropdownlist">
+          <button class="dropbtn">More <i class="fa fa-caret-down"></i> </button>
+          <div class="dropdown-content">
+            <a href="../Iphone page/Iphone.html"><i class="fa fa-mobile-phone" style="font-size:20px"></i> Apple I-Phones</a>
+            <a href="../Smartwatch page/Smartwatch.html"><i class="fa fa-clock-o" style="font-size:18px"></i>  Apple I-watches</a>
+          </div>
+        </div>
+      </div>
+    <!-----------------------Cart----------------------->
+      <div class='container-fluid' >
+      <div class='row' >
+        <div class='col-sm-12'>
+          <div class="products-container">
+            <div class="product-header">
+              <h5 class=" product-title" style="font-size:20px;">PRODUCT</h5>
+              <h5 class="price" style="font-size:20px;">PRICE</h5>
+              <h5 class="quantity" style="font-size:20px;">QUANTITY</h5>
+              <h5 class="total" style="font-size:20px;">TOTAL</h5>
+            </div>
+            <div class="products">
+            </div>
+            <form align="right" class="clearAll"action="#" method="post">
+              <button type="Submit" onclick="clearLocalStorage()">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------End of Cart----------------------->
+    </div>
+    <!-----------------------Body----------------------->
+      <div class='container-fluid'>
+        <div class='row' style='background-color:#DDD;'>
+          <div align='center' class='col-sm-12 bottom'>
+            <div class="social" style="margin-top:10px;">
+              <a href='#' target='_blank' class='fa fa-wifi'></a>
+              <a href='https://mail.google.com/mail/u/0/#inbox' target='_blank' class='fa fa-google-plus'></a>
+              <a href='https://www.facebook.com/' target='_blank' class='fa fa-facebook'></a>
+              <a href='https://www.instagram.com/?hl=en' target='_blank' class='fa fa-instagram'></a>
+              <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+              <a href='https://www.youtube.com/' target='_blank' class='fa fa-youtube'></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='container-fluid' style="margin:0; padding:0;" >
+      <div class='row' style='background-color:#DDD; padding:0; margin:0;'>
+        <div class='col-sm-12'>
+          <div class="flip-card" style='margin-left:8%;'>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+              </div>
+              <div class="flip-card-back">
+                <i>+65 92483989</i>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" style='margin-left:7.4%;'>
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class='fa fa-envelope'>&nbsp;Gmail</i>
+            </div>
+            <div class="flip-card-back">
+              <i>ITechhub@gmail.com</i>
+            </div>
+            </div>
+          </div>
+          <div class="flip-card" style='margin-left:7.4%;'>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+              </div>
+              <div class="flip-card-back flip-card-backa">
+                <i>180 Ang Mo Kio Avenue 8 Singapore</i>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" style='margin-left:7.4%;'>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+              </div>
+              <div class="flip-card-back">
+                  <i>Mrs Teo Bee Wah</i>
+              </div>
+            </div>
+          </div></br>
+        <hr style='border-top:1px solid #292929; padding:0;'>
+        <h1 align='center'><div class="Logoimg"><a href="#top"><img src="../Images/linkedin_banner_image_1.png" height="70px" width="150px" alt="Logo"/></a></div> </h1>
+        <hr style='border-top: 1px solid #292929'>
+        <h6 align='center'>&copy;Copyright April 2020-May 2020</h6>
+        <h6 align='center'>All rights reserved. <a class="Aboutus" href="../About page/Aboutus.html">About us.</a> Powered by <span class="powered"> I - Techub</span> </h6>
+        </div>
+       </div>
+       </div>
+           <!-----------------------JavaScript----------------------->
+       <script>
+         window.onscroll = function() {myFunction()};
+
+         var navbar = document.getElementById("Topnavbar");
+         var sticky = navbar.offsetTop;
+
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             navbar.classList.add("sticky");
+           }
+           else {
+             navbar.classList.remove("sticky");
+           }
+         }
+       </script>
+       <script src="../mainmine.js">
+
+       </script>
+      </body>
+    </html>

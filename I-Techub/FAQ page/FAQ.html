@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I-tech: FAQ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../Navbar.css">
+    <link rel="stylesheet" href="../Footer.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <style media="screen">
+      .dropdown-content a{
+        font-size: 15px;
+        padding:15px;
+        float: none;
+        color: #f6f7f5;
+        text-decoration: none;
+        display: inline-block;
+        text-align: Center;
+        min-width: inherit;
+        border-radius: 6px;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky {
+        padding-top: 2px;
+        z-index: 5;
+        background-color: #292929;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----------------------Header----------------------->
+    <div class="FAQ" name="top">
+      <div class="Navbar" id="Topnavbar">
+        <a style=" font-size:30px; padding:11px;" href="../Home page/Homepage.html">I <span style="color:#FE4066; font-size:30px;"> - </span> Techub</a>
+        <span style="float:right;"><a href="FAQ.html"><i class="fa fa-question-circle" style="font-size:24px"></i> FAQ</a></span>
+        <span style="float:right;"><a href="../Signup page/Signup.html"><i class="	fa fa-user-circle"></i> Log In &amp; Sign Up</a></span>
+        <a  href="../Cart page/Cart.html" style="float:right;"> <i class="fa fa-cart-plus"></i> Cart <span class="Cart" style="font-size:14px;">0</span></a>
+        <div class="dropdownlist">
+          <button class="dropbtn">More <i class="fa fa-caret-down"></i> </button>
+          <div class="dropdown-content">
+            <a href="../Iphone page/Iphone.html"><i class="fa fa-mobile-phone" style="font-size:20px"></i> Apple I-Phones</a>
+            <a href="../Smartwatch page/Smartwatch.html"><i class="fa fa-clock-o" style="font-size:18px"></i>  Apple I-watches</a>
+          </div>
+        </div>
+      </div>
+        <h1 class="headerFAQ"><i class="fa fa-question-circle" style="font-size:100px; color:#ddd;" aria-hidden="true"></i> <br>Frequently Asked Questions.</h1>
+    </div>
+    <!-----------------------Body----------------------->
+
+    <div style="background-color:#404040;">
+      <div class='container' >
+        <div class='row' style="max-width:100%; padding:0; margin:0;">
+          <div class='col-sm-12'style="padding:0;" >
+            <div class="tabContainer">
+              <div class="buttonContainer">
+                <button onclick="showPanel(0, '#525252')"> <i class="fa fa-question" style="font-size:30px"></i><br>General <br>FAQ</button>
+                <button  onclick="showPanel(1, '#404040')"><i class="fa fa-credit-card" aria-hidden="true" style="font-size:30px"></i><br> Payments <br> FAQ</button>
+                <button  onclick="showPanel(2, '#525252')"><i class="fa fa-truck" style="font-size:30px"></i><br>Delivery<br> FAQs</button>
+                <button  onclick="showPanel(3, '#404040')"><i class="fa fa-shopping-cart" style="font-size:30px"></i><br>Online Seller<br> FAQ</button>
+              </div>
+              <div class="tabPanel">
+                <button class="accordion">Do you charge fees for payments?</button>
+                <div class="panela">
+                <p> There are no fees for Online Sellers transferring funds back to domestic accounts. However there are fees for transfers to your home account without a currency conversion.</p>
+                </div>
+                <button class="accordion">is the xr water proof?</button>
+                <div class="panela">
+                <p> Yes, the iPhone Xr is water- and dust resistant. It is IP 67 certified (meaning it is designed to be resistant to water when submerged up to one meter for no longer than 30 minutes.).</p>
+                </div>
+                <button class="accordion">What kind of warranty from the apple store?</button>
+                <div class="panela">
+                <p>The warranties you get from the Apple Store are Apple’s 1 year limited warranty, and AppleCare+. The 1 Year Limited Warranty covers technical problems, not physical (like software, restoration, etc).</p>
+                </div>
+               </div>
+              <div class="tabPanel">
+                <button class="accordion">How do i cancel my order before i make a payment?</button>
+                <div class="panela">
+                <p> After logging into your account, go to your Shopping Cart. Here, you will be able to make payment or cancel your order. </p>
+                </div>
+                <button class="accordion">What are the payments available?</button>
+                <div class="panelb">
+                <p>At the moment, we only accept Credit/Debit cards and Paypal payments.</p>
+                </div>
+                <button class="accordion">Can i pay using Paypal without a Paypal account?</button>
+                <div class="panelb">
+                <p> It is commonly misunderstood that a Paypal account is needed in order to make payments through Paypal. The truth is you DO NOT need one.</p>
+                </div>
+               </div>
+              <div class="tabPanel">
+                <button class="accordion">How much is shipping within Singapore?</button>
+                <div class="panela">
+                <p>Shipping rates for orders below S$100 are about S$4 to $8, depending on the items ordered.</p>
+                </div>
+                <button class="accordion">I need an item urgently. What can I do?</button>
+                <div class="panela">
+                <p>We have Express Delivery Services available at an additional charge. Simply add the Next-Day/ Specific Date Delivery Service ($15) to your cart along with your items.</p>
+                </div>
+                <button class="accordion">How long will it take for my parcel to arrive?</button>
+                <div class="panela">
+                <p>We typically fulfil your order within 1 working day of it being placed, so do take that into consideration when estimating the arrival date.</p>
+                </div>
+              </div>
+              <div class="tabPanel">
+                <button class="accordion">How can i change my shipping address?</button>
+                <div class="panela">
+                <p>When you are checking out your order, the default shipping address will be displayed and you have the option to amend it if you need to.</p>
+                </div>
+                <button class="accordion">How do i activate my account?</button>
+                <div class="panelb">
+                <p>The instructions to activate your account will be sent to your email once you have submitted the registration form. </p>
+                </div>
+                <button class="accordion">Whata re all the checkout limits</button>
+                <div class="panelb">
+                <p>Your account must have sufficient points before you can checkout the sample products.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------contact Us form----------------------->
+    <div class="fixing">
+    <div class='container contactUs' style="min-width:100%; padding:0;">
+      <div class='row' style="max-width:100%; padding:0; margin:0 auto;">
+        <div class='col-sm-12' >
+          <h1>Enquiry. Feedback.</h1>
+          <form class="contactForm" action="FormSubmitted.html" method="get" target="
+          ">
+            <table class="tableForm" align="center">
+              <tr>
+                <td><input type="text" name="name" placeholder="Name" required></td>
+                <td rowspan="3" style="margin-left:20px;"><textarea name="comments" rows="8" placeholder="Comments.." required></textarea></td>
+              </tr>
+              <tr>
+                <td><input type="email" name="email" placeholder="E-mail" required></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="phoneNo" pattern="^[89]\d{7}" placeholder="Phone No." required></td>
+              </tr>
+              <tr>
+                <td><button type="submit">Submit</button></td>
+              </tr>
+            </table>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-----------------------Footer----------------------->
+    <div class='container-fluid'>
+      <div class='row' style='background-color:#DDD;'>
+        <div align='center' class='col-sm-12 bottom'>
+          <div class="social" style="margin-top:10px;">
+            <a href='#' target='_blank' class='fa fa-wifi'></a>
+            <a href='https://mail.google.com/mail/u/0/#inbox' target='_blank' class='fa fa-google-plus'></a>
+            <a href='https://www.facebook.com/' target='_blank' class='fa fa-facebook'></a>
+            <a href='https://www.instagram.com/?hl=en' target='_blank' class='fa fa-instagram'></a>
+            <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+            <a href='https://www.youtube.com/' target='_blank' class='fa fa-youtube'></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid' style="margin:0; padding:0;" >
+    <div class='row' style='background-color:#DDD; padding:0; margin:0;'>
+      <div class='col-sm-12'>
+        <div class="flip-card" style='margin-left:8%;'>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+            </div>
+            <div class="flip-card-back">
+              <i>+65 92483989</i>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" style='margin-left:7.4%;'>
+          <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class='fa fa-envelope'>&nbsp;Gmail</i>
+          </div>
+          <div class="flip-card-back">
+            <i>ITechhub@gmail.com</i>
+          </div>
+          </div>
+        </div>
+        <div class="flip-card" style='margin-left:7.4%;'>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+            </div>
+            <div class="flip-card-back flip-card-backa">
+              <i>180 Ang Mo Kio Avenue 8 Singapore</i>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" style='margin-left:7.4%;'>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+            </div>
+            <div class="flip-card-back">
+                <i>Mrs Teo Bee Wah</i>
+            </div>
+          </div>
+        </div></br>
+      <hr style='border-top:1px solid #292929; padding:0;;'>
+      <h1 align='center'><div class="Logoimg"><a href="#top"><img src="../Images/linkedin_banner_image_1.png" height="70px" width="150px" alt="Logo"/></a></div> </h1>
+      <hr style='border-top: 1px solid #292929'>
+      <h6 align='center'>&copy;Copyright April 2020-May 2020</h6>
+      <h6 align='center'>All rights reserved. <a class="Aboutus" href="../About page/Aboutus.html">About us.</a> Powered by <span class="powered"> I - Techub</span> </h6>
+      </div>
+     </div>
+     </div>
+     <!-----------------------JavaScript----------------------->
+     <script>
+     //Navber
+       window.onscroll = function() {myFunction()};
+
+       var navbar = document.getElementById("Topnavbar");
+       var sticky = navbar.offsetTop;
+
+       function myFunction() {
+         if (window.pageYOffset > sticky) {
+           navbar.classList.add("sticky");
+         }
+         else {
+           navbar.classList.remove("sticky");
+         }
+       }
+
+      //Dropdown accordion
+      var drop = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < drop.length; i++) {
+        	drop[i].addEventListener("click", function() {
+          	this.classList.toggle("active");
+          	var panel = this.nextElementSibling;
+          	if (panel.style.display === "block") {
+           		panel.style.display = "none";
+          	} else {
+            		panel.style.display = "block";
+          	}
+       	 });
+      }
+     </script>
+     <script src="../mainmine.js"></script>
+     <script src="FAQ.js"></script>
+  </body>
+</html>

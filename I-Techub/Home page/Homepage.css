@@ -1,0 +1,205 @@
+* {box-sizing: border-box;}
+
+body{
+  margin: 0;
+  font-family: "sans-serif", arial;
+}
+
+.header1a{
+  position: absolute;
+  top:31%;
+  left:29%;
+  font-weight: bolder;
+  font-style: italic;
+  font-size:60px;
+  font-family:fangsong;
+  color:#f6f7f5;
+}
+.header1b{
+  font-weight: bolder;
+  font-style: italic;
+  font-size:24px;
+  font-family:monospace;
+  color:#f6f7f5;
+}
+.Shopnow{
+  font-family:monospace;
+  padding:8px 20px 8px 20px;
+  line-height: 1em;
+  background-color: #ddd;
+  color: #292929;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+.Shopnow:hover{
+  transition: 0.3s;
+  background-color: #292929;
+  color: #ddd;
+  text-decoration: none;
+}
+.reviews{
+  background-color: #ddd;
+  min-width: 100%;
+  min-height: 200px;
+  margin: 0;
+  text-align: center;
+}
+.Quality{
+  color: #545454;
+  font-size: 23px;
+  font-family: serif;
+}
+.Quality2{
+  color: #292929;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.Business{
+  font-size: 23px;
+  font-weight: bolder;
+  font-family: "Lucida Console";
+  letter-spacing: 2px;
+}
+.rating{
+  font-size: 20px;
+}
+
+
+.Iphone{
+  background-image: url("../Images/all_iphones.jpg");
+  background-size:cover;
+  background-position: center;
+  position:relative;
+  min-height: 450px;
+  min-width: 100%;
+  margin: 0;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(0%,40%);
+  overflow: hidden;
+  margin-left: 6%;
+}
+.sizing2:hover .middle {
+  opacity: 1;
+}
+.text h1{
+  font-size: 60px;
+  text-decoration: none;
+  color:#DDD;
+  text-align: left;
+}
+.text h3{
+  font-size: 25px;
+  text-decoration: none;
+  color:#DDD;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.text2{
+  font-family:monospace;
+  padding:8px 20px 10px 20px;
+  background-color: #DDD;
+  color: #292929;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: left;
+}
+.text2:hover{
+  transition: 0.3s;
+  background-color: #292929;
+  color: #ddd;
+  text-decoration: none;
+}
+
+
+.watch{
+  background-image: url("../Images/watch.jpeg");
+  background-size:cover;
+  background-position: center;
+  position:relative;
+  min-height: 450px;
+  min-width: 100%;
+  margin: 0;
+}
+.text3 h1{
+  font-size: 60px;
+  text-decoration: none;
+  color:#292929;
+  text-align: left;
+}
+.text3 h3{
+  font-size: 25px;
+  text-decoration: none;
+  color:##292929;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.text4{
+  font-family:monospace;
+  padding:8px 20px 10px 20px;
+  background-color: #292929;
+  color: #DDD;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: left;
+}
+.text4:hover{
+  transition: 0.3s;
+  background-color: #c2c2c2;
+  color: #292929;
+  text-decoration: none;
+}
+
+
+.Empty{
+  background-color: #292929;
+  width: 100%;
+  min-height: 15px;
+  margin:0;
+  border: 0;
+}
+
+
+
+
+@media only screen and (max-width: 980px) {
+  .middle{
+    margin-left: 0;
+  }
+  .sizing2:hover .middle {
+    text-align: center;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 3px;
+    padding-bottom: 20px;
+  }
+  .text h1{
+    text-align: center;
+  }
+  .text h3{
+    text-align: center;
+  }
+  .text3 h1{
+    color:#DDD;
+    text-align: center;
+  }
+  .text3 h3{
+    color:#DDD;
+    text-align: center;
+  }
+  .text4{
+    background-color: #ddd;
+    color: #292929;
+  }
+  .text4:hover{
+    background-color: #292929;
+    color: #c2c2c2;
+  }
+}

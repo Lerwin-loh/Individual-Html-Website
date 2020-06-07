@@ -1,0 +1,113 @@
+.Spoil{
+  background-image: url(../Images/Try.jpg);
+  background-attachment: fixed;
+  min-height: 440px;
+  background-size:cover;
+  background-position: center;
+  position:relative;
+}
+
+.headerIphone1{
+  font-weight: bolder;
+  font-style: italic;
+  font-size:40px;
+  font-family:sans-serif;
+  color:White;
+  text-align: center;
+  text-shadow:2px 2px 3px black;
+}
+
+.headerIphone2{
+  font-weight: bold;
+  font-style: italic;
+  font-size:24px;
+  font-family:monospace;
+  color:white;
+  text-align: center;
+  text-shadow:2px 2px 3px black;
+}
+
+.totalheader{
+  position: absolute;
+  top:70%;
+  left:39%;
+}
+
+
+
+.imagecontainer {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.overlayb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.imagecontainer:hover .overlay,
+.imagecontainer:hover .overlayb {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  line-height: 20px;
+  color: #ddd;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+ul li{
+  font-size: 20px;
+  line-height: 30px;;
+}
+
+.add-cart{
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  color: #292929;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 14px;
+  border: 0;
+  width:150px;
+}
+
+.add-cart:hover{
+  background-color: #292929;
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
